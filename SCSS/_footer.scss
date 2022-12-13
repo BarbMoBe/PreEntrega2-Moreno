@@ -1,0 +1,28 @@
+@use "mixin";
+footer {
+  background-color: $backgroundBorderColor_4;
+
+  h4 {
+    color: $color_3;
+    font-size: x-small;
+    @include mixin.mobile {
+      font-size: 0.8rem;
+    }
+    @include mixin.tablet {
+      font-size: 1.8rem;
+    }
+    @include mixin.desktop {
+      font-size: 2rem;
+    }
+  }
+
+  .foot__1 {
+    @include mixin.Footer;
+  }
+  .foot__2 {
+    @include mixin.Footer;
+  }
+  .foot__3 {
+    @include mixin.Footer;
+  }
+}

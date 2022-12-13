@@ -1,0 +1,70 @@
+@mixin Footer {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+@mixin Buttons {
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+@mixin data {
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-color: black;
+  border-radius: 1.8rem;
+  border-width: 0.3rem;
+}
+
+@mixin mediaform {
+  @media only screen and (min-width: 200px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (min-width: 350px) {
+    @content;
+  }
+}
+@mixin mobile1 {
+  @media only screen and (min-width: 380px) {
+    @content;
+  }
+}
+
+@mixin medium1 {
+  @media only screen and (min-width: 500px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media only screen and (min-width: 600px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet1 {
+  @media only screen and (min-width: 800px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}

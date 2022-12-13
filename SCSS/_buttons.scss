@@ -1,0 +1,13 @@
+@use "mixin";
+.button {
+  text-align: $text-aling_1;
+
+  @include mixin.Buttons;
+}
+.button_pages {
+  font-size: 1rem;
+  color: $color_3;
+
+  @include mixin.Buttons;
+  @include mixin.data;
+}

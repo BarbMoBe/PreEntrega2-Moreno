@@ -1,0 +1,99 @@
+@use "mixin";
+.block_data {
+  font-size: 2rem;
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 1rem 0rem 1rem 0rem;
+  text-align: center;
+  @include mixin.medium {
+    font-size: 3rem;
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 1rem 0rem 1rem 0rem;
+    text-align: center;
+  }
+}
+.data_list {
+  display: block;
+  text-align: $text-aling_1;
+}
+.data_1 {
+  display: inline-flex;
+  text-align: $text-aling_1;
+  @include mixin.data;
+}
+.data_2 {
+  @include mixin.data;
+  display: inline-flex;
+}
+.data__info {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+form {
+  text-align: $text-aling_1;
+  @include mixin.tablet1 {
+    margin: 2rem 4rem 2rem 4rem;
+  }
+  @include mixin.large {
+    margin: 3rem 8rem 3rem 8rem;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+  fieldset {
+    align-self: $text-aling_1;
+    background-color: $backgroundBorderColor_5;
+    @include mixin.tablet1 {
+      background-color: $backgroundBorderColor_5;
+      border-style: $border-style_1;
+      border-color: $backgroundBorderColor_5;
+      border-radius: $border-radius_1;
+      border-width: $border-width_1;
+    }
+  }
+  .text_name {
+    justify-content: $text-aling_1;
+    font-size: 1rem;
+    margin: 1rem 0.5rem 0 1rem;
+    padding-top: 1rem;
+    text-align: center;
+
+    @include mixin.mobile {
+      font-size: 1.2rem;
+      margin: 1rem 1.5rem 0.5rem 1.5rem;
+      padding-top: 1rem;
+      text-align: center;
+    }
+    @include mixin.mobile1 {
+      font-size: 1.5rem;
+      margin: 1rem 1.5rem 0.5rem 1.5rem;
+      padding-top: 1rem;
+      text-align: center;
+    }
+    @include mixin.medium1 {
+      display: flex;
+    }
+  }
+
+  textarea {
+    background-color: $backgroundBorderColor_6;
+    border-style: $border-style_1;
+    border-color: $backgroundBorderColor_6;
+    border-radius: $border-radius_1;
+    border-width: $border-width_1;
+  }
+  label {
+    font-size: 1rem;
+    color: $color_5;
+    @include mixin.medium1 {
+      font-size: 1.5rem;
+      margin: 0.5rem 1rem 0rem 1rem;
+    }
+  }
+  input {
+    &:hover {
+      opacity: 0.8;
+    }
+    background-color: $backgroundBorderColor_6;
+    border-style: $border-style_1;
+    border-color: $backgroundBorderColor_6;
+    border-radius: $border-radius_1;
+    border-width: $border-width_1;
+  }
+}

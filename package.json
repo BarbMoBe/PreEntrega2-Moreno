@@ -1,0 +1,20 @@
+{
+  "name": "preentrega3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scriptB": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarbMoBe/PreEntrega2-Moreno.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BarbMoBe/PreEntrega2-Moreno/issues"
+  },
+  "homepage": "https://github.com/BarbMoBe/PreEntrega2-Moreno#readme"
+}
