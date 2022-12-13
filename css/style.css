@@ -15,76 +15,16 @@ body {
   background-color: #fffff4;
 }
 
-header {
-  position: sticky;
-  padding-top: 0.5rem 0;
-}
-
-nav {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding-top: 8px;
-  padding-right: 16px;
-  padding-bottom: 8px;
-  padding-left: 16px;
-  background-color: #f3efe2;
-}
-
-.nav-item {
-  font-size: 1rem;
-  color: #161615;
-  font-family: "Georgia", serif;
-}
-
-@media (min-width: 768px) {
-  .nav-item {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .nav-item {
-    font-size: 1.5rem;
-  }
-}
-.nav__menu ul li {
-  font-family: "Cormorant Garamond", serif;
-  justify-content: center;
-  list-style: none;
-}
-
-.nav__menu {
-  margin-top: 3rem;
-}
-
-.nav_name {
-  margin: 0.2rem 0.2rem 0.2rem 0.2rem;
-  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-}
-.nav__link {
-  border-width: 3rem;
-  font-size: 1.5rem;
-  text-decoration: none;
-  text-transform: inherit;
-}
-
-.nav__link:hover {
-  opacity: 0.8;
-}
-
 .artindex {
   align-items: center;
   background-image: linear-gradient(to top, #dfe3e3, #a1bfbf);
   margin: 0 0 1rem 0;
 }
-
-.articleindex {
+.artindex .articleindex {
   font-family: "Cormorant Garamond", serif;
   text-align: justify;
 }
-
-.imgarticle {
+.artindex .imgarticle {
   display: block;
   justify-items: center;
   max-width: 100%;
@@ -98,9 +38,18 @@ img {
   transition: 0.5s;
   object-fit: cover;
 }
-
 .imgproducst:hover {
   transform: scale(1.2);
+}
+
+.container .products__image {
+  margin: 1.5rem 1rem 1.5rem 1rem;
+  padding: 0rem 1rem 1.5rem 1rem;
+  max-width: 100%;
+}
+.container .products__line {
+  display: block;
+  text-align: center;
 }
 
 .imagenindex {
@@ -112,8 +61,7 @@ img {
   margin: 1rem 1rem 1rem 1rem;
   padding: 1rem 1rem 1rem 1rem;
 }
-
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   #imagesize {
     margin: 2rem 2rem 2rem 2rem;
     padding: 2rem 2rem 2rem 2rem;
@@ -125,26 +73,12 @@ img {
   padding: 0rem 1rem 1.5rem 1rem;
   max-width: 100%;
 }
-.products__image {
-  margin: 1.5rem 1rem 1.5rem 1rem;
-  padding: 0rem 1rem 1.5rem 1rem;
-  max-width: 100%;
-}
-
-.products__line1 {
-  display: block;
-}
-
-.products__line {
-  text-align: center;
-}
 
 h1 {
-  text-align: center;
   font-size: 0.8rem;
+  text-align: center;
 }
-
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   h1 {
     font-size: 2.5rem;
   }
@@ -160,45 +94,15 @@ h2 {
   text-align: center;
   font-size: 0.8rem;
 }
-
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   h2 {
     font-size: 2.5rem;
-  }
-}
-
-h3 {
-  font-family: "Faustina", serif;
-  font-size: 1.2rem;
-  color: #34312e;
-}
-
-@media (min-width: 768px) {
-  h3 {
-    font-size: 1.8rem;
   }
 }
 
 #tittle_pages {
   margin: 0.5rem 0 0.5rem 0;
   padding-top: 1rem;
-}
-
-h4 {
-  color: white;
-  text-align: center;
-  padding-bottom: 0.2rem;
-  font-size: 0.6rem;
-}
-@media (min-width: 400px) {
-  h4 {
-    font-size: 0.8rem;
-  }
-}
-@media (min-width: 768px) {
-  h4 {
-    font-size: 1.8rem;
-  }
 }
 
 #paragraph {
@@ -218,7 +122,7 @@ p {
   line-height: 1rem;
   font-size: 0.7rem;
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   p {
     font-size: 1.4rem;
     line-height: 2rem;
@@ -234,68 +138,122 @@ p {
 .text_product {
   text-align: center;
 }
-
-.text_name {
-  justify-content: center;
+.text_product h3 {
+  font-family: "Faustina", serif;
+  font-size: 1.2rem;
+  color: #34312e;
 }
-
-.price {
+@media only screen and (min-width: 768px) {
+  .text_product h3 {
+    font-size: 1.8rem;
+  }
+}
+.text_product .price {
   font-size: 0.9rem;
 }
-@media (min-width: 768px) {
-  .price {
+@media only screen and (min-width: 768px) {
+  .text_product .price {
     font-size: 1.4rem;
   }
 }
-
-.dto {
+.text_product .dto {
   font-style: oblique;
   font-size: 1rem;
   color: rgba(251, 149, 6, 0.796);
 }
-@media (min-width: 768px) {
-  .dto {
+@media only screen and (min-width: 768px) {
+  .text_product .dto {
     font-size: 1.4rem;
   }
 }
 
-@media (min-width: 200px) {
-  .block_data {
-    font-size: 2rem;
-    margin: 1rem 0rem 1rem 0rem;
-    padding: 1rem 0rem 1rem 0rem;
-    text-align: center;
+.fa-brands {
+  color: white;
+  padding: 0.2rem 0.2rem 0.5rem 0.2rem;
+  font-size: x-small;
+}
+@media only screen and (min-width: 380px) {
+  .fa-brands {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .fa-brands {
+    font-size: 1.8rem;
   }
 }
 
-@media (min-width: 600px) {
+.fa-solid {
+  color: white;
+  padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+  font-size: x-small;
+}
+@media only screen and (min-width: 380px) {
+  .fa-solid {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 380px) and (min-width: 768px) {
+  .fa-solid {
+    font-size: 1.8rem;
+  }
+}
+
+header {
+  position: sticky;
+}
+header nav {
+  width: 100%;
+  height: 100%;
+  padding: 8px 16px 8px 16px;
+  background-color: #f3efe2;
+}
+header__menu {
+  margin-top: 3rem;
+}
+header__menu ul li {
+  font-family: "Cormorant Garamond", serif;
+  justify-content: center;
+  list-style: none;
+}
+header_name {
+  margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+header__link {
+  border-width: 3rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: inherit;
+}
+header__link:hover {
+  opacity: 0.8;
+}
+
+.nav-item {
+  font-size: 1rem;
+  color: #161615;
+  font-family: "Georgia", serif;
+}
+@media only screen and (min-width: 768px) {
+  .nav-item {
+    font-size: 1.5rem;
+  }
+}
+
+.block_data {
+  font-size: 2rem;
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 1rem 0rem 1rem 0rem;
+  text-align: center;
+}
+@media only screen and (min-width: 600px) {
   .block_data {
     font-size: 3rem;
     margin: 1rem 0rem 1rem 0rem;
     padding: 1rem 0rem 1rem 0rem;
     text-align: center;
   }
-}
-.button {
-  text-align: center;
-  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-}
-
-.button_pages {
-  font-size: 1rem;
-  color: white;
-  background-color: black;
-  border-style: solid;
-  border-color: black;
-  border-radius: 1.8rem;
-  border-width: 0.3rem;
-  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
-}
-
-input:hover {
-  opacity: 0.8;
 }
 
 .data_list {
@@ -304,14 +262,14 @@ input:hover {
 }
 
 .data_1 {
+  display: inline-flex;
+  text-align: center;
   background-color: black;
   color: white;
   border-style: solid;
   border-color: black;
   border-radius: 1.8rem;
   border-width: 0.3rem;
-  display: inline-flex;
-  text-align: center;
 }
 
 .data_2 {
@@ -325,97 +283,29 @@ input:hover {
 }
 
 .data__info {
-  padding-top: 0.5rem;
-  padding-right: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 form {
   text-align: center;
 }
-
-fieldset {
-  align-self: center;
-  background-color: rgb(92, 88, 88);
-}
-
-input {
-  background-color: #e7e4e0;
-  border-style: solid;
-  border-color: #e7e4e0;
-  border-radius: 1.8rem;
-  border-width: 0.3rem;
-}
-
-textarea {
-  background-color: #e7e4e0;
-  border-style: solid;
-  border-color: #e7e4e0;
-  border-radius: 1.8rem;
-  border-width: 0.3rem;
-}
-
-@media (min-width: 200px) {
-  .text_name {
-    font-size: 1rem;
-    margin: 1rem 0.5rem 0 1rem;
-    padding-top: 1rem;
-    text-align: center;
-  }
-}
-
-@media (min-width: 350px) {
-  .text_name {
-    font-size: 1.2rem;
-    margin: 1rem 1.5rem 0.5rem 1.5rem;
-    padding-top: 1rem;
-    text-align: center;
-  }
-}
-
-@media (min-width: 380px) {
-  .text_name {
-    font-size: 1.5rem;
-    margin: 1rem 1.5rem 0.5rem 1.5rem;
-    padding-top: 1rem;
-    text-align: center;
-  }
-}
-
-label {
-  font-size: 1rem;
-  color: rgb(255, 250, 250);
-}
-
-@media (min-width: 500px) {
-  label {
-    font-size: 1.5rem;
-    margin: 0.5rem 1rem 0rem 1rem;
-  }
-}
-
-@media (min-width: 500px) {
-  .text_name {
-    display: flex;
-  }
-}
-
-@media (min-width: 800px) {
+@media only screen and (min-width: 800px) {
   form {
     margin: 2rem 4rem 2rem 4rem;
   }
 }
-
-@media (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
   form {
     margin: 3rem 8rem 3rem 8rem;
     padding: 1rem 2rem 1rem 2rem;
   }
 }
-
-@media (min-width: 800px) {
-  fieldset {
+form fieldset {
+  align-self: center;
+  background-color: rgb(92, 88, 88);
+}
+@media only screen and (min-width: 800px) {
+  form fieldset {
     background-color: rgb(92, 88, 88);
     border-style: solid;
     border-color: rgb(92, 88, 88);
@@ -423,57 +313,114 @@ label {
     border-width: 0.3rem;
   }
 }
+form .text_name {
+  justify-content: center;
+  font-size: 1rem;
+  margin: 1rem 0.5rem 0 1rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+@media only screen and (min-width: 350px) {
+  form .text_name {
+    font-size: 1.2rem;
+    margin: 1rem 1.5rem 0.5rem 1.5rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 380px) {
+  form .text_name {
+    font-size: 1.5rem;
+    margin: 1rem 1.5rem 0.5rem 1.5rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 500px) {
+  form .text_name {
+    display: flex;
+  }
+}
+form textarea {
+  background-color: #e7e4e0;
+  border-style: solid;
+  border-color: #e7e4e0;
+  border-radius: 1.8rem;
+  border-width: 0.3rem;
+}
+form label {
+  font-size: 1rem;
+  color: rgb(255, 250, 250);
+}
+@media only screen and (min-width: 500px) {
+  form label {
+    font-size: 1.5rem;
+    margin: 0.5rem 1rem 0rem 1rem;
+  }
+}
+form input {
+  background-color: #e7e4e0;
+  border-style: solid;
+  border-color: #e7e4e0;
+  border-radius: 1.8rem;
+  border-width: 0.3rem;
+}
+form input:hover {
+  opacity: 0.8;
+}
+
 footer {
   background-color: black;
 }
-
-.fa-brands {
+footer h4 {
   color: white;
-  padding-top: 0.2rem;
-  padding-right: 0.2rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.2rem;
-  font-size: 0.6rem;
+  font-size: x-small;
 }
-@media (min-width: 400px) {
-  .fa-brands {
+@media only screen and (min-width: 350px) {
+  footer h4 {
     font-size: 0.8rem;
   }
 }
-@media (min-width: 768px) {
-  .fa-brands {
+@media only screen and (min-width: 768px) {
+  footer h4 {
     font-size: 1.8rem;
   }
 }
-.fa-solid {
-  color: white;
-  padding-top: 0.5rem;
-  padding-right: 0.2rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.2rem;
-  font-size: 0.6rem;
-}
-@media (min-width: 400px) {
-  .fa-solid {
-    font-size: 0.8rem;
+@media only screen and (min-width: 992px) {
+  footer h4 {
+    font-size: 2rem;
   }
 }
-@media (min-width: 768px) {
-  .fa-solid {
-    font-size: 1.8rem;
-  }
-}
-.foot__1 {
+footer .foot__1 {
   text-align: center;
   padding-top: 0.5rem;
 }
-.foot__2 {
+footer .foot__2 {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+footer .foot__3 {
   text-align: center;
   padding-top: 0.5rem;
 }
 
-.foot__3 {
+.button {
   text-align: center;
-  padding-top: 0.5rem;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
 }
-/*auto-fit / min-max*/
+
+.button_pages {
+  font-size: 1rem;
+  color: white;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-color: black;
+  border-radius: 1.8rem;
+  border-width: 0.3rem;
+}
+
+/*# sourceMappingURL=style.css.map */
