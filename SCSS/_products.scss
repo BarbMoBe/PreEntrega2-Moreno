@@ -1,0 +1,47 @@
+@use "mixin";
+
+.text_product {
+  h3 {
+    font-family: $font-family_4;
+    font-size: 1.2rem;
+    color: $color_2;
+    @include mixin.tablet {
+      font-size: 1.8rem;
+    }
+  }
+  .price {
+    font-size: 0.9rem;
+    @include mixin.tablet {
+      font-size: 1.4rem;
+    }
+  }
+  .dto {
+    font-style: oblique;
+    font-size: 1rem;
+    color: $color_4;
+    @include mixin.tablet {
+      font-size: 1.4rem;
+    }
+  }
+  text-align: $text-aling_1;
+}
+.imgproducst {
+  transition: 0.5s;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.products__image {
+  margin: 1.5rem 1rem 1.5rem 1rem;
+  padding: 0rem 1rem 1.5rem 1rem;
+  max-width: 100%;
+}
+.products__line {
+  display: block;
+  text-align: $text-aling_1;
+}
