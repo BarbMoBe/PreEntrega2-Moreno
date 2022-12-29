@@ -9,6 +9,9 @@
       name="keywords"
       content="Lencería, diseño personalizado, ropa interior"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -31,6 +34,10 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=DM+Serif+Display&family=Lato:ital,wght@1,300&family=Overpass:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
@@ -43,7 +50,7 @@
     <header>
       <nav class="navbar navbar-expand-lg sticky-top navlink">
         <div class="container-fluid p-4">
-          <div class="nav logo">
+          <div class="nav_logo">
             <a class="nav-link" href="index.html">
               <img
                 src="imagenesProyecto/Logo.png"
@@ -87,7 +94,7 @@
         </div>
       </nav>
     </header>
-    <section class="imagenindex">
+    <section id="imagenindex">
       <div
         id="carouselExampleControls"
         class="carousel slide"
@@ -97,21 +104,21 @@
           <div class="carousel-item active">
             <img
               src="imagenesProyecto/imgindex.jpg"
-              class="d-block w-100 img-fluid"
+              class="carrouselimg d-block w-100 img-fluid"
               alt="imgindex"
             />
           </div>
           <div class="carousel-item">
             <img
               src="imagenesProyecto/index2.jpg"
-              class="d-block w-100 img-fluid"
+              class="carrouselimg d-block w-100 img-fluid"
               alt="imgindex"
             />
           </div>
           <div class="carousel-item">
             <img
               src="imagenesProyecto/index1.jpg"
-              class="d-block w-100 img-fluid"
+              class="carrouselimg d-block w-100 img-fluid"
               alt="imgindex"
             />
           </div>
@@ -136,50 +143,79 @@
         </button>
       </div>
     </section>
+    <h2><strong>VENUS LINGERY</strong></h2>
+    <section class="grid1">
+      <div class="gridindex">
+        <div class="div1">
+          <img class="gridimg" src="imagenesProyecto/grid1.jpg" alt="" />
+        </div>
+        <div class="div2">
+          <img class="gridimg" src="imagenesProyecto/grid2.jpg" alt="" />
+        </div>
+        <div class="div3">
+          <img class="gridimg" src="imagenesProyecto/grid3.jpg" alt="" />
+        </div>
+        <div class="div4">
+          <img class="gridimg" src="imagenesProyecto/grid4.jpg" alt="" />
+        </div>
+        <div class="div5">
+          <img class="gridimg" src="imagenesProyecto/grid5.jpg" alt="" />
+        </div>
+        <div class="div6">
+          <img class="gridimg" src="imagenesProyecto/grid6.jpg" alt="" />
+        </div>
+      </div>
+    </section>
     <article class="artindex p-5 text-center text-md-start">
-      <div class="container">
-        <div
-          class="article row d-md-flex aling-item-center justify-content-between"
-        >
-          <div class="aling-item-center my-6 col-lg-5">
-            <h1>NOS ADAPTAMOS A TI</h1>
-            <p class="articleindex">
-              En <strong>Venus Lingery </strong>contamos con un segmento en el
-              que puedes mandarnos tu diseño y nosotros lo adaptamos a ti. No te
-              preocues por talles, estilos o materiales. Lo importante es que te
-              sientas comoda con nuestros productos. Primero debes contactarnos
-              y mandarnos el diseño de tu preferencia, talle y material.
-              Nosotros te responderemos enviando el bosquejo del mismo y
-              presupuesto.
-            </p>
-            <a href="Diseños.html">
-              <input
-                class="button button_pages aling-item-center"
-                type="button"
-                value="DISEÑOS"
-              />
-            </a>
-          </div>
-          <div class="imgarticle p-4 col-lg-7 d-none d-md-block">
-            <img
-              id="imgarticle"
-              src="imagenesProyecto/index3.jpg"
-              class="w-50 img-fluid rounded mx-auto d-block d-none d-md-block"
-              alt="index3"
+      <div
+        class="container row d-md-flex aling-item-center justify-content-between"
+      >
+        <div class="aling-item-center my-6 col-lg-6">
+          <h1>NOS ADAPTAMOS A TI</h1>
+          <p class="articleindex">
+            En <strong>Venus Lingery </strong>contamos con un segmento en el que
+            puedes mandarnos tu diseño y nosotros lo adaptamos a ti. No te
+            preocues por talles, estilos o materiales. Lo importante es que te
+            sientas comoda con nuestros productos. Primero debes contactarnos y
+            mandarnos el diseño de tu preferencia, talle y material. Nosotros te
+            responderemos enviando el bosquejo del mismo y presupuesto.
+          </p>
+          <a class="button1" href="Diseños.html">
+            <input
+              class="button button_pages aling-item-center"
+              type="button"
+              value="DISEÑOS"
             />
-          </div>
+          </a>
+        </div>
+        <div class="imgarticle p-4 col-lg-6 d-none d-lg-block">
+          <img
+            id="imgarticle"
+            src="imagenesProyecto/index3.jpg"
+            class="img-fluid img-thumbnail rounded mx-auto d-block d-none d-lg-block"
+            alt="index3"
+          />
         </div>
       </div>
     </article>
+    <section class="saleverano">
+      <div class="tarjeta2">
+        <img
+          class="imgtarjeta w-100 img-fluid"
+          src="imagenesProyecto/tarjeta6.jpg"
+          alt=""
+        />
+      </div>
+    </section>
     <section class="products">
       <div class="container subtittle_pages" style="text-align: center">
         <h2>
-          <span> PRODUCOS QUE SE ADAPTAN A TI</span>
+          <span> PRODUCTOS QUE SE ADAPTAN A TI</span>
         </h2>
       </div>
       <div class="container products">
         <div
-          class="products__line d-lg-flex aling-item-center justify-content-between"
+          class="products__line d-md-flex aling-item-center justify-content-between"
         >
           <div class="products__image">
             <img
