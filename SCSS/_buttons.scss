@@ -6,7 +6,7 @@
 }
 .button_pages {
   font-size: 1rem;
-  color: $color_3;
+  color: $color_1;
 
   @include mixin.Buttons;
   @include mixin.data;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -17,64 +18,46 @@ body {
 
 .artindex {
   align-items: center;
-  background-image: linear-gradient(to top, #dfe3e3, #a1bfbf);
+  background-image: linear-gradient(to top, #fffff4, rgba(224, 224, 224, 0.9333333333));
   margin: 0 0 1rem 0;
 }
 .artindex .articleindex {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Overpass", sans-serif;
   text-align: justify;
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
 }
-.artindex .imgarticle {
+.artindex #imgarticle {
   display: block;
   justify-items: center;
   max-width: 100%;
+  height: auto;
+  max-height: 600px;
 }
 
-img {
-  max-width: 100%;
-}
-
-.imgproducst {
-  transition: 0.5s;
-  object-fit: cover;
-}
-.imgproducst:hover {
-  transform: scale(1.2);
-}
-
-.container .products__image {
-  margin: 1.5rem 1rem 1.5rem 1rem;
-  padding: 0rem 1rem 1.5rem 1rem;
-  max-width: 100%;
-}
-.container .products__line {
-  display: block;
-  text-align: center;
-}
-
-.imagenindex {
+#imagenindex {
   max-width: 100%;
   height: auto;
+  max-height: 750px;
+  box-sizing: border-box;
 }
-
-#imagesize {
-  margin: 1rem 1rem 1rem 1rem;
-  padding: 1rem 1rem 1rem 1rem;
-}
-@media only screen and (min-width: 992px) {
-  #imagesize {
-    margin: 2rem 2rem 2rem 2rem;
-    padding: 2rem 2rem 2rem 2rem;
-  }
+#imagenindex .carrouselimg {
+  max-width: 100%;
+  height: auto;
+  max-height: 750px;
+  box-sizing: border-box;
 }
 
 .image {
   margin: 1.5rem 1rem 1.5rem 1rem;
   padding: 0rem 1rem 1.5rem 1rem;
   max-width: 100%;
+  text-align: center;
 }
 
 h1 {
+  font-family: "DM Serif Display", serif;
   font-size: 0.8rem;
   text-align: center;
 }
@@ -91,6 +74,7 @@ h1 {
 }
 
 h2 {
+  font-family: "DM Serif Display", serif;
   text-align: center;
   font-size: 0.8rem;
 }
@@ -105,19 +89,6 @@ h2 {
   padding-top: 1rem;
 }
 
-#paragraph {
-  font-size: 1rem;
-  padding: 1rem 1rem 1rem 1rem;
-  text-align: justify;
-}
-
-.paragraph_container {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 0.7rem;
-  text-align: justify;
-}
-
 p {
   line-height: 1rem;
   font-size: 0.7rem;
@@ -130,41 +101,9 @@ p {
 }
 
 .text {
-  background-color: rgb(242, 241, 239);
+  background-color: #d0d0c6;
   padding-top: 5px;
   border-color: black;
-}
-
-.text_product {
-  text-align: center;
-}
-.text_product h3 {
-  font-family: "Faustina", serif;
-  font-size: 1.2rem;
-  color: #34312e;
-}
-@media only screen and (min-width: 768px) {
-  .text_product h3 {
-    font-size: 1.8rem;
-  }
-}
-.text_product .price {
-  font-size: 0.9rem;
-}
-@media only screen and (min-width: 768px) {
-  .text_product .price {
-    font-size: 1.4rem;
-  }
-}
-.text_product .dto {
-  font-style: oblique;
-  font-size: 1rem;
-  color: rgba(251, 149, 6, 0.796);
-}
-@media only screen and (min-width: 768px) {
-  .text_product .dto {
-    font-size: 1.4rem;
-  }
 }
 
 .fa-brands {
@@ -199,69 +138,84 @@ p {
   }
 }
 
-header {
-  position: sticky;
+.tarjeta2 {
+  margin: 2rem;
 }
-header nav {
+.tarjeta2 .imgtarjeta {
+  max-width: 100%;
+  height: auto;
+  max-height: 700px;
+}
+
+nav {
   width: 100%;
-  height: 100%;
-  padding: 8px 16px 8px 16px;
-  background-color: #f3efe2;
+  height: auto;
+  background-color: #fffff4;
 }
-header__menu {
-  margin-top: 3rem;
+nav .nav_logo {
+  margin: 1rem;
+  padding: 2px;
+  height: auto;
+  max-width: 100%;
+  min-width: 100px;
+  min-height: 30px;
 }
-header__menu ul li {
-  font-family: "Cormorant Garamond", serif;
-  justify-content: center;
-  list-style: none;
+@media only screen and (min-width: 768px) {
+  nav .nav_logo {
+    padding: 1.5rem;
+    margin: 0 3rem 0 3rem;
+  }
 }
-header_name {
-  margin: 0.2rem 0.2rem 0.2rem 0.2rem;
-  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+@media only screen and (min-width: 768px) {
+  nav .navbar-toggler {
+    padding: 0.5rem;
+    margin: 0 3rem 0 3rem;
+  }
 }
-header__link {
+nav .nav-link {
   border-width: 3rem;
   font-size: 1.5rem;
   text-decoration: none;
   text-transform: inherit;
 }
-header__link:hover {
+nav .nav-link:hover {
   opacity: 0.8;
 }
-
-.nav-item {
+nav .nav-item {
   font-size: 1rem;
   color: #161615;
-  font-family: "Georgia", serif;
+  font-family: "DM Serif Display", serif;
 }
 @media only screen and (min-width: 768px) {
-  .nav-item {
+  nav .nav-item {
     font-size: 1.5rem;
   }
 }
+nav ul li {
+  font-family: "Overpass", sans-serif;
+  justify-content: center;
+  list-style: none;
+}
 
-.block_data {
+.page_contact .block_data {
   font-size: 2rem;
   margin: 1rem 0rem 1rem 0rem;
   padding: 1rem 0rem 1rem 0rem;
   text-align: center;
 }
 @media only screen and (min-width: 600px) {
-  .block_data {
+  .page_contact .block_data {
     font-size: 3rem;
     margin: 1rem 0rem 1rem 0rem;
     padding: 1rem 0rem 1rem 0rem;
     text-align: center;
   }
 }
-
-.data_list {
+.page_contact .block_data .data_list {
   display: block;
   text-align: center;
 }
-
-.data_1 {
+.page_contact .block_data .data_1 {
   display: inline-flex;
   text-align: center;
   background-color: black;
@@ -271,8 +225,7 @@ header__link:hover {
   border-radius: 1.8rem;
   border-width: 0.3rem;
 }
-
-.data_2 {
+.page_contact .block_data .data_2 {
   background-color: black;
   color: white;
   border-style: solid;
@@ -281,31 +234,35 @@ header__link:hover {
   border-width: 0.3rem;
   display: inline-flex;
 }
-
-.data__info {
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+.page_contact .block_data .data__info {
+  padding: 0.5rem;
 }
-
-form {
+.page_contact form {
   text-align: center;
+  margin-bottom: 0.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .page_contact form {
+    margin: 1.5rem 3rem 1.5rem 3rem;
+  }
 }
 @media only screen and (min-width: 800px) {
-  form {
+  .page_contact form {
     margin: 2rem 4rem 2rem 4rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  form {
+  .page_contact form {
     margin: 3rem 8rem 3rem 8rem;
     padding: 1rem 2rem 1rem 2rem;
   }
 }
-form fieldset {
+.page_contact form fieldset {
   align-self: center;
   background-color: rgb(92, 88, 88);
 }
-@media only screen and (min-width: 800px) {
-  form fieldset {
+@media only screen and (min-width: 768px) {
+  .page_contact form fieldset {
     background-color: rgb(92, 88, 88);
     border-style: solid;
     border-color: rgb(92, 88, 88);
@@ -313,59 +270,56 @@ form fieldset {
     border-width: 0.3rem;
   }
 }
-form .text_name {
+.page_contact form fieldset .text_name {
   justify-content: center;
   font-size: 1rem;
-  margin: 1rem 0.5rem 0 1rem;
+  margin: 1rem 1.2rem 0 1.2rem;
   padding-top: 1rem;
   text-align: center;
 }
 @media only screen and (min-width: 350px) {
-  form .text_name {
+  .page_contact form fieldset .text_name {
     font-size: 1.2rem;
     margin: 1rem 1.5rem 0.5rem 1.5rem;
-    padding-top: 1rem;
-    text-align: center;
   }
 }
 @media only screen and (min-width: 380px) {
-  form .text_name {
+  .page_contact form fieldset .text_name {
     font-size: 1.5rem;
-    margin: 1rem 1.5rem 0.5rem 1.5rem;
-    padding-top: 1rem;
-    text-align: center;
   }
 }
 @media only screen and (min-width: 500px) {
-  form .text_name {
+  .page_contact form fieldset .text_name {
     display: flex;
+    padding-left: 1rem;
+    padding-right: 4rem;
   }
 }
-form textarea {
+.page_contact form fieldset textarea {
   background-color: #e7e4e0;
   border-style: solid;
   border-color: #e7e4e0;
   border-radius: 1.8rem;
   border-width: 0.3rem;
 }
-form label {
+.page_contact form fieldset label {
   font-size: 1rem;
   color: rgb(255, 250, 250);
 }
 @media only screen and (min-width: 500px) {
-  form label {
-    font-size: 1.5rem;
+  .page_contact form fieldset label {
+    font-size: 1.6rem;
     margin: 0.5rem 1rem 0rem 1rem;
   }
 }
-form input {
+.page_contact form fieldset input {
   background-color: #e7e4e0;
   border-style: solid;
   border-color: #e7e4e0;
   border-radius: 1.8rem;
   border-width: 0.3rem;
 }
-form input:hover {
+.page_contact form fieldset input:hover {
   opacity: 0.8;
 }
 
@@ -412,7 +366,7 @@ footer .foot__3 {
 
 .button_pages {
   font-size: 1rem;
-  color: white;
+  color: #161615;
   margin: 0.5rem 0.5rem 0.5rem 0.5rem;
   padding: 0.2rem 0.2rem 0.2rem 0.2rem;
   background-color: black;
@@ -421,6 +375,109 @@ footer .foot__3 {
   border-color: black;
   border-radius: 1.8rem;
   border-width: 0.3rem;
+}
+
+.grid1 {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.grid1 .gridindex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.grid1 .gridimg {
+  width: 100%;
+  height: auto;
+  max-height: 550px;
+  overflow: hidden;
+}
+.grid1 .gridimg:hover {
+  background-color: rgb(128, 125, 125);
+  opacity: 0.6;
+}
+
+.text_product {
+  text-align: center;
+}
+.text_product h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  color: #34312e;
+}
+@media only screen and (min-width: 768px) {
+  .text_product h3 {
+    font-size: 1.8rem;
+  }
+}
+.text_product .price {
+  font-size: 0.9rem;
+}
+@media only screen and (min-width: 768px) {
+  .text_product .price {
+    font-size: 1.4rem;
+  }
+}
+.text_product .dto {
+  font-style: oblique;
+  font-size: 1rem;
+  color: #f48940;
+}
+@media only screen and (min-width: 768px) {
+  .text_product .dto {
+    font-size: 1.4rem;
+  }
+}
+
+.imgproducst {
+  transition: 0.5s;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
+}
+.imgproducst:hover {
+  transform: scale(1.2);
+}
+
+.products__image {
+  margin: 1.5rem 1rem 1.5rem 1rem;
+  padding: 0rem 1rem 1.5rem 1rem;
+  max-width: 100%;
+}
+
+.products__line {
+  display: block;
+  text-align: center;
+}
+
+.paragraph_container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.7rem;
+  text-align: justify;
+}
+.paragraph_container #paragraph {
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: justify;
+}
+.paragraph_container .imgDiseños1 {
+  margin: 1rem;
+  padding: 1rem;
+}
+@media only screen and (min-width: 992px) {
+  .paragraph_container .imgDiseños1 {
+    margin: 2.5rem;
+    padding: 2.5;
+  }
+}
+.paragraph_container .imagesize {
+  margin: 2.5rem;
+  padding: 2.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

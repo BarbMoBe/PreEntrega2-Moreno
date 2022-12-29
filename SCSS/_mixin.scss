@@ -23,6 +23,12 @@
   }
 }
 
+@mixin mobilexs {
+  @media only screen and (min-width: 320px) {
+    @content;
+  }
+}
+
 @mixin mobile {
   @media only screen and (min-width: 350px) {
     @content;
@@ -33,7 +39,11 @@
     @content;
   }
 }
-
+@mixin mediumxs {
+  @media only screen and (min-width: 480px) {
+    @content;
+  }
+}
 @mixin medium1 {
   @media only screen and (min-width: 500px) {
     @content;
@@ -62,7 +72,11 @@
     @content;
   }
 }
-
+@mixin largexs {
+  @media only screen and (min-width: 1024px) {
+    @content;
+  }
+}
 @mixin large {
   @media only screen and (min-width: 1200px) {
     @content;

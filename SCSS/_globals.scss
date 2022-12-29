@@ -15,63 +15,51 @@ body {
   font-family: $font-family_1;
   background-color: $background-color_1;
 }
+
 .artindex {
   .articleindex {
     font-family: $font-family_3;
     text-align: justify;
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
   }
-  .imgarticle {
+  #imgarticle {
     display: block;
     justify-items: $text-aling_1;
     max-width: 100%;
+    height: auto;
+    max-height: 600px;
   }
 
   align-items: $text-aling_1;
-  background-image: linear-gradient(to top, #dfe3e3, #a1bfbf);
+  background-image: linear-gradient(to top, $background-color_1, #e0e0e0ee);
   margin: 0 0 1rem 0;
 }
 
-img {
+#imagenindex {
   max-width: 100%;
-}
-.imgproducst {
-  transition: 0.5s;
-  object-fit: cover;
-  &:hover {
-    transform: scale(1.2);
+  height: auto;
+  max-height: 750px;
+  box-sizing: border-box;
+  .carrouselimg {
+    max-width: 100%;
+    height: auto;
+    max-height: 750px;
+    box-sizing: border-box;
   }
 }
 
-.container {
-  .products__image {
-    margin: 1.5rem 1rem 1.5rem 1rem;
-    padding: 0rem 1rem 1.5rem 1rem;
-    max-width: 100%;
-  }
-  .products__line {
-    display: block;
-    text-align: $text-aling_1;
-  }
-}
-.imagenindex {
-  max-width: 100%;
-  height: auto;
-}
-#imagesize {
-  margin: 1rem 1rem 1rem 1rem;
-  padding: 1rem 1rem 1rem 1rem;
-  @include mixin.desktop {
-    margin: 2rem 2rem 2rem 2rem;
-    padding: 2rem 2rem 2rem 2rem;
-  }
-}
 .image {
   margin: 1.5rem 1rem 1.5rem 1rem;
   padding: 0rem 1rem 1.5rem 1rem;
   max-width: 100%;
+  text-align: center;
 }
 
 h1 {
+  font-family: $font-family_2;
+
   font-size: 0.8rem;
   text-align: $text-aling_1;
   @include mixin.tablet {
@@ -84,6 +72,7 @@ h1 {
   text-align: $text-aling_1;
 }
 h2 {
+  font-family: $font-family_2;
   text-align: $text-aling_1;
   font-size: 0.8rem;
   @include mixin.tablet {
@@ -96,17 +85,6 @@ h2 {
   padding-top: 1rem;
 }
 
-#paragraph {
-  font-size: 1rem;
-  padding: 1rem 1rem 1rem 1rem;
-  text-align: justify;
-}
-.paragraph_container {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 0.7rem;
-  text-align: justify;
-}
 p {
   line-height: 1rem;
   font-size: 0.7rem;
@@ -119,31 +97,6 @@ p {
   background-color: $background-color_3;
   padding-top: 5px;
   border-color: $backgroundBorderColor_4;
-}
-.text_product {
-  h3 {
-    font-family: $font-family_4;
-    font-size: 1.2rem;
-    color: $color_2;
-    @include mixin.tablet {
-      font-size: 1.8rem;
-    }
-  }
-  .price {
-    font-size: 0.9rem;
-    @include mixin.tablet {
-      font-size: 1.4rem;
-    }
-  }
-  .dto {
-    font-style: oblique;
-    font-size: 1rem;
-    color: $color_4;
-    @include mixin.tablet {
-      font-size: 1.4rem;
-    }
-  }
-  text-align: $text-aling_1;
 }
 
 .fa-brands {
@@ -166,5 +119,14 @@ p {
     @include mixin.tablet {
       font-size: 1.8rem;
     }
+  }
+}
+
+.tarjeta2 {
+  margin: 2rem;
+  .imgtarjeta {
+    max-width: 100%;
+    height: auto;
+    max-height: 700px;
   }
 }
